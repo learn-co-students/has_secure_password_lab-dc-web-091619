@@ -28,3 +28,17 @@ Users should not be able to log in if they enter an incorrect password. Just red
 Happy coding.
 
 [flash]: http://api.rubyonrails.org/classes/ActionDispatch/Flash.html
+
+
+SessionsController
+  post create
+    logs you in with the correct password (FAILED - 1)
+    rejects invalid passwords (FAILED - 2)
+    rejects empty passwords (FAILED - 3)
+
+UsersController
+  create
+    creates a new user (FAILED - 4)
+    logs you in (FAILED - 5)
+    sets your password if the confirmation matches (FAILED - 6)
+    redirects you if your password and confirmation don't match (FAILED - 7)
