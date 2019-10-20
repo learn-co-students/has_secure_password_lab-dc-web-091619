@@ -1,0 +1,2 @@
+module WelcomesNoTestFrameworkHelper
+end
